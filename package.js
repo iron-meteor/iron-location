@@ -7,13 +7,18 @@ Package.describe({
 
 Package.on_use(function (api) {
   // some utils
+  api.use('webapp');
   api.use('underscore');
   api.use('deps');
+  api.use('jquery');
+  api.use('ejson');
 
   api.use('iron-core');
   api.imply('iron-core');
+  api.use('iron-url');
 
-  api.add('lib/location', 'client');
+  api.add_files('lib/state.js');
+  api.add_files('lib/location.js');
 });
 
 Package.on_test(function (api) {
@@ -21,6 +26,5 @@ Package.on_test(function (api) {
   api.use('tinytest');
   api.use('test-helpers');
 
-  api.add_files('location_test.js', 'client');
+  api.add_files('test/location_test.js', 'client');
 });
-
