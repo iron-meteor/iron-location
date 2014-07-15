@@ -1,3 +1,3 @@
 Iron.Location
 ==============================================================================
-Reactive urls that work with IE8/8 and modern pushState browsers.
+Reactive urls that work with IE8/9 and modern pushState browsers.
