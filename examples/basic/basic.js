@@ -1,6 +1,6 @@
 if (Meteor.isClient) {
   Deps.autorun(function (c) {
     var value = Iron.Location.get();
-    console.log('Iron.Location.get()', value && value.href);
+    console.log('Iron.Location.get(): ', value);
   });
 }

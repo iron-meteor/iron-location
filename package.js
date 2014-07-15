@@ -1,6 +1,6 @@
 Package.describe({
   name: 'iron-location',
-  summary: 'Reactive urls and pushState handling.',
+  summary: 'Reactive urls that work in IE8/9 and modern browsers.',
   version: '0.1.0',
   githubUrl: 'https://github.com/eventedmind/iron-location'
 });
