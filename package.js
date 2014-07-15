@@ -17,8 +17,9 @@ Package.on_use(function (api) {
   api.imply('iron-core');
   api.use('iron-url');
 
-  api.add_files('lib/state.js');
-  api.add_files('lib/location.js');
+  api.add_files('lib/utils.js', 'client');
+  api.add_files('lib/state.js', 'client');
+  api.add_files('lib/location.js', 'client');
 });
 
 Package.on_test(function (api) {
