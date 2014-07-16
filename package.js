@@ -13,19 +13,19 @@ Package.on_use(function (api) {
   api.use('jquery');
   api.use('ejson');
 
-  api.use('iron-core');
-  api.imply('iron-core');
-  api.use('iron-url');
+  api.use('iron:core');
+  api.imply('iron:core');
+  api.use('iron:url');
 
-  api.add_files('lib/utils.js', 'client');
-  api.add_files('lib/state.js', 'client');
-  api.add_files('lib/location.js', 'client');
+  api.addFiles('lib/utils.js', 'client');
+  api.addFiles('lib/state.js', 'client');
+  api.addFiles('lib/location.js', 'client');
 });
 
 Package.on_test(function (api) {
-  api.use('iron-location');
+  api.use('iron:location');
   api.use('tinytest');
   api.use('test-helpers');
 
-  api.add_files('test/location_test.js', 'client');
+  api.addFiles('test/location_test.js', 'client');
 });
