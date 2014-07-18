@@ -19,6 +19,8 @@ Package.on_use(function (api) {
   api.add_files('lib/utils.js', 'client');
   api.add_files('lib/state.js', 'client');
   api.add_files('lib/location.js', 'client');
+
+  api.export(['urlToHashStyle', 'urlFromHashStyle'], 'client', {testOnly: true});
 });
 
 Package.on_test(function (api) {
