@@ -1,8 +1,7 @@
 Package.describe({
-  name: 'iron-location',
   summary: 'Reactive urls that work in IE8/9 and modern browsers.',
   version: '0.1.0',
-  githubUrl: 'https://github.com/eventedmind/iron-location'
+  git: 'https://github.com/eventedmind/iron-location.git'
 });
 
 Package.on_use(function (api) {
@@ -13,19 +12,19 @@ Package.on_use(function (api) {
   api.use('jquery');
   api.use('ejson');
 
-  api.use('iron-core');
-  api.imply('iron-core');
-  api.use('iron-url');
+  api.use('iron:core');
+  api.imply('iron:core');
+  api.use('iron:url');
 
-  api.add_files('lib/utils.js', 'client');
-  api.add_files('lib/state.js', 'client');
-  api.add_files('lib/location.js', 'client');
+  api.addFiles('lib/utils.js', 'client');
+  api.addFiles('lib/state.js', 'client');
+  api.addFiles('lib/location.js', 'client');
 });
 
 Package.on_test(function (api) {
-  api.use('iron-location');
+  api.use('iron:location');
   api.use('tinytest');
   api.use('test-helpers');
 
-  api.add_files('test/location_test.js', 'client');
+  api.addFiles('test/location_test.js', 'client');
 });
