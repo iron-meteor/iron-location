@@ -12,9 +12,9 @@ Package.on_use(function (api) {
   api.use('jquery');
   api.use('ejson');
 
-  api.use('iron-core');
-  api.imply('iron-core');
-  api.use('iron-url');
+  api.use('iron:core');
+  api.imply('iron:core');
+  api.use('iron:url');
 
   api.add_files('lib/utils.js', 'client');
   api.add_files('lib/state.js', 'client');
@@ -22,7 +22,7 @@ Package.on_use(function (api) {
 });
 
 Package.on_test(function (api) {
-  api.use('iron-location');
+  api.use('iron:location');
   api.use('tinytest');
   api.use('test-helpers');
 
