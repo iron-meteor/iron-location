@@ -1,0 +1,19 @@
+<head>
+  <title>initiator-test</title>
+</head>
+
+<template name="a">
+  <h1>This is the first template</h1>
+  <p>We got here from {{initiator}}</p>
+  <a href="{{pathFor 'b'}}">Straight to B</a>
+  <a href="{{pathFor 'b'}}" data-initiator="menu">Menu to B</a>
+  <a data-back>Back to B</a>
+</template>
+
+<template name="b">
+  <h1>This is the second template</h1>
+  <p>We got here from {{initiator}}</p>
+  <a href="{{pathFor 'a'}}">Straight to A</a>
+  <a href="{{pathFor 'a'}}" data-initiator="menu">Menu to A</a>
+  <a data-back>Back to A</a>
+</template>
