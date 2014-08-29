@@ -6,13 +6,11 @@ Package.describe({
 
 Package.on_use(function (api) {
   // some utils
-  api.use('webapp');
-  api.use('underscore');
-  api.use('deps');
-  api.use('jquery');
-  api.use('ejson');
+  api.use('underscore@1.0.0');
+  api.use('tracker@1.0.2-rc1');
+  api.use('jquery@1.0.0');
 
-  api.use('iron:core');
+  api.use('iron:core@0.3.2');
   api.imply('iron:core');
   api.use('iron:url');
 
