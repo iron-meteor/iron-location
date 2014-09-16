@@ -1,0 +1,25 @@
+<head>
+  <title>historyState</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>Current state:</h1>
+  <pre>{{historyState}}</pre>
+
+  <form id="push">
+    <label>Push State</label>
+    <input type="text" name="push">
+    <button type="submit">Push</button>
+  </form>
+  <form id="replace">
+    <label>Replace State</label>
+    <input type="text" name="replace">
+    <button type="submit">Replace</button>
+  </form>
+</template>
