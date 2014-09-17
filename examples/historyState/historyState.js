@@ -9,11 +9,13 @@ if (Meteor.isClient) {
   Template.hello.events({
     'submit #push': function(e, t) {
       e.preventDefault();
-      Iron.Location.go('/' + Random.id(), {historyState: t.$('input').val()});
+      var state = $(e.target).find('input').val();
+      Iron.Location.go('/' + Random.id(), {historyState: state});
     },
     'submit #replace': function(e, t) {
       e.preventDefault();
-      console.log("Can't do this yet");
+      var state = $(e.target).find('input').val();
+      Iron.Location.replaceState(state);
     }
   })
 }
