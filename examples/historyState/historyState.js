@@ -17,5 +17,13 @@ if (Meteor.isClient) {
       var state = $(e.target).find('input').val();
       Iron.Location.replaceState(state);
     }
-  })
+  });
+  
+  Iron.Location.onGo(function() {
+    console.log('go:', this);
+  });
+  
+  Iron.Location.onPopState(function() {
+    console.log('popstate:', this);
+  });
 }
