@@ -1,0 +1,19 @@
+<head>
+  <title>backTracker</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> location}}
+</body>
+
+<template name="location">
+  <h2>You are at {{path}}</h2>
+  <h3>You got here via {{method}}</h3>
+  
+  <form>
+    <input type="text" placeholder="a new path">
+    <button type="submit">Go!</button>
+  </form>
+</template>
