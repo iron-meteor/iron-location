@@ -16,6 +16,8 @@ Package.on_use(function (api) {
 
   api.use('iron:url@1.0.0-pre4');
 
+  api.use('appcache', {weak: true});
+  
   api.add_files('lib/utils.js', 'client');
   api.add_files('lib/state.js', 'client');
   api.add_files('lib/location.js', 'client');
