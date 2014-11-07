@@ -1,6 +1,6 @@
 Package.describe({
   summary: 'Reactive urls that work in IE8/9 and modern browsers.',
-  version: '1.0.0',
+  version: '1.0.1',
   git: 'https://github.com/eventedmind/iron-location.git'
 });
 
