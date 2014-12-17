@@ -2,12 +2,12 @@
 var URLS = [
   {
     base: 'http://host:port/some/pathname/?query=string#bar',
-    hash: 'http://host:port#/some/pathname/?query=string&__hash__=bar'
+    hash: 'http://host:port#!some/pathname/?query=string&__hash__=bar'
   },
   {
     // using a param called 'hash'
     base: 'http://host:port/some/pathname/?hash=string',
-    hash: 'http://host:port#/some/pathname/?hash=string'
+    hash: 'http://host:port#!some/pathname/?hash=string'
   } 
 ]
 
