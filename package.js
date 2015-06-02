@@ -14,7 +14,7 @@ Package.on_use(function (api) {
   api.use('iron:core@1.0.8');
   api.imply('iron:core');
 
-  api.use('iron:url@1.0.8');
+  api.use('iron:url@1.0.9');
 
   api.use('appcache', {weak: true});
   
