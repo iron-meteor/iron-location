@@ -10,7 +10,7 @@ Package.on_use(function (api) {
 
   api.use('underscore');
   api.use('tracker');
-  api.use('jquery');
+  api.use('jquery', { weak: true });
 
   api.use('iron:core@1.0.11');
   api.imply('iron:core');
